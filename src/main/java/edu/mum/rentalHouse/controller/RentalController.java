@@ -168,6 +168,7 @@ return "redirect:/users";
 public String addContract(@ModelAttribute("contract") Contract contract, Model model) {
    	model.addAttribute("tenants", tenantService.getAllTenant());
    	model.addAttribute("residences", residenceService.getAll());
+   	
       	return "addContracts";
 }
 
